@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: azurespringappconfig
+  cloud:
+    azure:
+      appconfiguration:
+        stores:
+          - connection-string: ${CONNECTIONSTRING}
