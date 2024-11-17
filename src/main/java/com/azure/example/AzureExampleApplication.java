@@ -18,6 +18,7 @@ public class AzureExampleApplication {
 	public String value;
 
 	public static void main(String[] args) {
+		
 		ConfigurableApplicationContext context = SpringApplication.run(AzureExampleApplication.class, args);
 		MessageProperties messageProperties = context.getBean(MessageProperties.class);
 		log.info("datasource : {} dbdriverclass : {}", messageProperties.getDatasource() ,
