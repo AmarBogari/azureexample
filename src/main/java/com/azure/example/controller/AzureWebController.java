@@ -20,6 +20,6 @@ public class AzureWebController {
 
        @GetMapping("/allazureproperties1")
     public Map<String,String> getAllResources1(){
-        return azureService.getAllResources();
+        return azureService.getAllResources1();
     }
 }
