@@ -22,4 +22,9 @@ public class AzureService {
                 collect(Collectors.toMap(ConfigurationSetting::getKey,ConfigurationSetting::getValue));
     }
 
+    public Map<String, String> getAllResources1() {
+        return configurationClient.listConfigurationSettings(new SettingSelector()).stream().
+                collect(Collectors.toMap(ConfigurationSetting::getKey,ConfigurationSetting::getValue));
+    }
+
 }
